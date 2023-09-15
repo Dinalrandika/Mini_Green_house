@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/background01">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="REGISTRATION"
+            android:layout_marginTop="50dp"
+            android:id="@+id/lblHeadline"
+            android:textSize="50dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="20dp"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User Name"
+            android:id="@+id/lblUsername"
+            android:layout_marginStart="32dp"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:background="@drawable/forget"
+            android:layout_marginStart="32dp"
+            android:hint="Enter Username..."
+            android:id="@+id/EEusername"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginStart="32dp"
+            android:id="@+id/lblEmail"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:background="@drawable/forget"
+            android:layout_marginStart="32dp"
+            android:id="@+id/EEmail"
+            android:hint="Enter Email..."
+            android:inputType="textEmailAddress"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password"
+            android:layout_marginStart="32dp"
+            android:id="@+id/lblPassword"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:background="@drawable/forget"
+            android:layout_marginStart="32dp"
+            android:id="@+id/EPassword"
+            android:inputType="textPassword"
+            android:hint="Enter Password..."/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Password"
+            android:layout_marginStart="32dp"
+            android:id="@+id/lblLocation"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_gravity="left"
+            android:layout_marginTop="15dp"
+            />
+        <EditText
+            android:layout_width="350dp"
+            android:layout_height="48dp"
+            android:background="@drawable/forget"
+            android:layout_marginStart="32dp"
+            android:id="@+id/Ecpassword"
+            android:hint="Enter password..."
+            android:inputType="textPassword"/>
+
+
+
+
+
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/LProgressBar"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:id="@+id/btnRegister"
+            android:layout_marginTop="25dp"
+            android:textStyle="bold"
+            android:background="@drawable/button"
+            android:textSize="25sp"
+            android:layout_marginStart="60dp"
+            android:text="Register"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/loginNow"
+            android:text="Click to Login"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"/>
+    </LinearLayout>
+
+
+</LinearLayout>
